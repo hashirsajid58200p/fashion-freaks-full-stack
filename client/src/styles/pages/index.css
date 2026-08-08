@@ -209,19 +209,22 @@
     .new-content {
         position: relative;
         background-color: var(--con-color);
-        /* background-color: red; */
-        width: 307px;
+        width: 100%;
+        max-width: 310px;
         height: 380px;
-        padding: 40px 80px;
+        padding: 2.5rem 1.5rem;
         align-items: center;
         text-align: center;
         border-bottom-right-radius: 15px;
         overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
     
-    @media (max-width: 400px) {
+    @media (max-width: 576px) {
         .new-content {
-            width: 100%;
+            max-width: 280px;
+            padding: 2rem 1rem;
         }
     }
     
@@ -230,7 +233,6 @@
         display: inline-block;
         background-color: var(--first-color);
         color: #fff;
-        /* color: red; */
         padding: 0.3rem .8rem;
         border-radius: 4px;
         top: 6%;
@@ -297,7 +299,14 @@
         }
     }
     
-    @media (max-width: 991px) {}
+    @media (max-width: 991px) {
+        .steps {
+            padding: 5rem 3rem;
+        }
+        .steps-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
     /************ END NEW********/
     /*  */
     
@@ -347,23 +356,26 @@
     
     @media (max-width: 991px) {
         .steps-container {
-            grid-template-columns: repeat(1, 1fr 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     }
     
     @media (max-width: 767px) {
         .steps {
-            padding: 4rem 3rem;
-            margin: 0 1.5rem;
+            padding: 3rem 1.5rem;
+            margin: 0 1rem;
             width: auto;
         }
         .steps-container {
             grid-template-columns: repeat(1, 1fr);
+            padding-left: 0;
+            padding-right: 0;
         }
         .steps-box {
             text-align: center;
             max-width: 400px;
             margin: 0 auto;
+            padding: 2rem 1.5rem;
         }
     }
     /* START NEWSLETTER */
@@ -394,10 +406,26 @@
         font-size: 1.1rem;
         border-radius: 1rem 0 1rem 0;
         width: 100%;
+        box-sizing: border-box;
     }
     
     .newsletter-form button {
         padding: 20px;
         border-radius: 1rem 0 1rem 0;
+    }
+
+    @media (max-width: 576px) {
+        .newsletter-form {
+            flex-direction: column;
+            background-color: transparent;
+            gap: 1rem;
+        }
+        .newsletter-input {
+            border-radius: 0.5rem;
+        }
+        .newsletter-form button {
+            border-radius: 0.5rem;
+            width: 100%;
+        }
     }
     /* END NEWSLETTER */

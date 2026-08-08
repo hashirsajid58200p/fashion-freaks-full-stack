@@ -1,0 +1,35 @@
+/* Checkout Page Responsive Styles */
+.checkout-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.checkout-card {
+  background: var(--con-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px var(--shadow);
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .checkout-grid-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    padding: 0 0.5rem;
+  }
+  .checkout-grid-layout > div:nth-child(2) {
+    order: -1;
+  }
+  .checkout-card {
+    padding: 1.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .checkout-card {
+    padding: 1.25rem 0.85rem !important;
+  }
+}

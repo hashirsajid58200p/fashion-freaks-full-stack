@@ -1,0 +1,30 @@
+/* Payment Page Responsive Styles */
+.payment-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.payment-card {
+  background: var(--con-color);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px var(--shadow);
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.payment-expiry-cvv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 576px) {
+  .payment-card {
+    padding: 1.5rem 1rem;
+  }
+  .payment-expiry-cvv {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}

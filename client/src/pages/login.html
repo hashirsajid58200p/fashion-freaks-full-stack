@@ -7,24 +7,25 @@
     <title>Login | Fashion Freaks</title>
     <link rel="icon" type="image/png" href="../../public/images/logos/logo-red.png">
     <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/pages/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <main class="main" style="padding-top: 120px; display: flex; justify-content: center; align-items: center; min-height: 70vh;">
-        <section class="section container" style="background: var(--con-color); padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 20px var(--shadow); max-width: 400px; width: 90%;">
+    <main class="main login-main">
+        <section class="section container login-card">
             <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Login</h2>
             
             <form id="simple-login-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
                 <div>
                     <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email Address</label>
-                    <input type="email" required id="login-email" placeholder="example@email.com" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color);">
+                    <input type="email" required id="login-email" placeholder="example@email.com" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color); box-sizing: border-box;">
                 </div>
                 
                 <div>
                     <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Password</label>
-                    <input type="password" required id="login-password" placeholder="••••••••" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color);">
+                    <input type="password" required id="login-password" placeholder="••••••••" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color); box-sizing: border-box;">
                 </div>
 
                 <button type="submit" class="button" style="width: 100%; padding: 1rem; border-radius: 0.5rem; font-size: 1.1rem; margin-top: 1rem;">

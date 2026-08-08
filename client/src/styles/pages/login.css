@@ -1,0 +1,34 @@
+/* Login Page Responsive Styles */
+.login-main {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.login-card {
+  background: var(--con-color);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px var(--shadow);
+  max-width: 400px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .login-main {
+    padding-top: 90px;
+  }
+  .login-card {
+    padding: 1.8rem 1.25rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-card {
+    padding: 1.5rem 1rem;
+  }
+}

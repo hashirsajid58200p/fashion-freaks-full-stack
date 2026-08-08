@@ -140,6 +140,7 @@
 }
 .checkbox-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 0.5rem;
 }
@@ -158,3 +159,38 @@
   border-radius: 8px;
   border: 1px solid var(--shadow);
 }
+
+@media (max-width: 991px) {
+  .upload-form-container {
+    padding: 2.5rem 1.5rem;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .upload-form-container {
+    padding: 2rem 1.25rem;
+    margin: 1rem auto;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .file-drop-zone {
+    padding: 1.8rem 1rem;
+  }
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .upload-form-container {
+    padding: 1.5rem 1rem;
+    border-radius: 0.75rem;
+  }
+  .checkbox-group {
+    gap: 0.8rem;
+  }
+}
+

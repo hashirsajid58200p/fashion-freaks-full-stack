@@ -751,13 +751,22 @@
         /* background-color:yellow; */
         z-index: 10000;
         width: 100%;
-        max-width: 420px;
+        max-width: min(420px, 100vw);
         box-shadow: -2px 0 4px var(--shadow);
         height: 100%;
         top: 0;
         right: -150%;
-        padding: 3rem 2rem;
+        padding: 3rem 1.5rem;
         transition: 0.4s;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+    
+    @media (max-width: 576px) {
+        .cart {
+            padding: 2.5rem 1rem;
+            max-width: 100vw;
+        }
     }
     
     .cart-title {

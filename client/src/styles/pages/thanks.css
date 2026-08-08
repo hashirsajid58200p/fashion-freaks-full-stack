@@ -1,0 +1,43 @@
+/* Thanks Page Responsive Styles */
+.thanks-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  min-height: 80vh;
+}
+
+.thanks-card {
+  background: var(--con-color);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px var(--shadow);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.thanks-receipt {
+  text-align: left;
+  background: var(--body-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--first-color);
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .thanks-main {
+    padding-top: 80px;
+  }
+  .thanks-card {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+  .thanks-receipt {
+    padding: 1rem;
+  }
+}
