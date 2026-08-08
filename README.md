@@ -4,7 +4,7 @@ Fashion Freaks is a modern full-stack e-commerce marketplace and AI-assisted onl
 
 ## 🌐 Live Demo
 
-🔗 [View Fashion Freaks Live](https://fashion-freaks.vercel.app/)
+🔗 [View Fashion Freaks Live](https://fashion-freaks-full-stack.vercel.app/)
 
 ## 👀 Previews
 
