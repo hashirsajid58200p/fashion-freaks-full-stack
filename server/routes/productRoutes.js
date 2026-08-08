@@ -21,8 +21,9 @@ router.post("/add", upload.array("images", 5), async (req, res) => {
       description,
     } = req.body;
 
-    // 1. Password Verification (Hardcoded as per request)
-    if (secretKey !== "Qwert01234kkk@") {
+    // 1. Password Verification
+    const expectedPassword = process.env.UPLOAD_PASSWORD || "Fash1onFr3aks#Admin2026!";
+    if (secretKey !== expectedPassword) {
       return res
         .status(401)
         .json({
