@@ -301,17 +301,17 @@ document.addEventListener("DOMContentLoaded", () => {
       position: fixed; 
       bottom: 2rem; 
       right: 2rem; 
-      width: 60px; 
-      height: 60px; 
+      width: 54px; 
+      height: 54px; 
       background-color: var(--first-color); 
       color: white; 
       border-radius: 50%; 
       display: flex; 
       justify-content: center; 
       align-items: center; 
-      font-size: 1.8rem; 
+      font-size: 1.5rem; 
       cursor: pointer; 
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3); 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25); 
       z-index: 9000; 
       transition: 0.3s;
     `;
@@ -325,10 +325,23 @@ document.addEventListener("DOMContentLoaded", () => {
       #ai-chatbot-send:active {
         transform: scale(0.95);
       }
+      .style-switcher .s-icon {
+        width: 54px !important;
+        height: 54px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-radius: 50% !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25) !important;
+        font-size: 1.3rem !important;
+      }
+      .style-switcher .s-icon i {
+        position: static !important;
+      }
       @media (max-width: 480px) {
         #ai-chatbot-window {
           right: 1rem !important;
-          bottom: 5.5rem !important;
+          bottom: 5rem !important;
           width: calc(100vw - 2rem) !important;
           max-width: 100% !important;
           height: 75vh !important;
@@ -336,8 +349,25 @@ document.addEventListener("DOMContentLoaded", () => {
         #ai-chatbot-btn {
           right: 1rem !important;
           bottom: 1rem !important;
-          width: 52px !important;
-          height: 52px !important;
+          width: 46px !important;
+          height: 46px !important;
+          font-size: 1.3rem !important;
+        }
+        .style-switcher {
+          bottom: 4.5rem !important;
+        }
+        .style-switcher .s-icon {
+          width: 46px !important;
+          height: 46px !important;
+          margin-right: 1rem !important;
+          font-size: 1.1rem !important;
+        }
+        .scroll-up, .scrollup, #scroll-up {
+          right: 1rem !important;
+          bottom: 8rem !important;
+          width: 46px !important;
+          height: 46px !important;
+          font-size: 1.1rem !important;
         }
       }
     `;
@@ -349,7 +379,7 @@ document.addEventListener("DOMContentLoaded", () => {
       display: none; 
       flex-direction: column; 
       position: fixed; 
-      bottom: 6.5rem; 
+      bottom: 6rem; 
       right: 2rem; 
       width: 350px; 
       max-width: calc(100vw - 2.5rem);
@@ -392,21 +422,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const scroller = document.querySelector(".scroll-up, .scrollup, #scroll-up");
     
     if (switcher) {
-      switcher.style.bottom = "8.5rem";
+      switcher.style.bottom = "6rem";
       const sIcon = switcher.querySelector(".s-icon");
       if (sIcon) {
-        sIcon.style.marginRight = "calc(2rem + 10px)";
+        sIcon.style.marginRight = "2rem";
       }
     }
     if (scroller) {
-      scroller.style.bottom = "13.5rem";
-      scroller.style.right = "calc(2rem + 10px)";
-      scroller.style.width = "40px";
-      scroller.style.height = "40px";
+      scroller.style.bottom = "10rem";
+      scroller.style.right = "2rem";
+      scroller.style.width = "54px";
+      scroller.style.height = "54px";
       scroller.style.display = "none";
       scroller.style.justifyContent = "center";
       scroller.style.alignItems = "center";
       scroller.style.borderRadius = "50%";
+      scroller.style.boxShadow = "0 4px 15px rgba(0,0,0,0.25)";
       
       window.addEventListener("scroll", () => {
         const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
