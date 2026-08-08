@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const submitBtn = document.getElementById("submitBtn");
-    submitBtn.innerText = "🚀 Processing & Uploading...";
+    submitBtn.innerText = "Processing & Uploading...";
     submitBtn.disabled = true;
 
     const formData = new FormData(productForm);
