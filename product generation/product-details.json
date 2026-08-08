@@ -1,0 +1,13 @@
+{
+  "name": "Crimson Storm Expedition Parka",
+  "category": "Men",
+  "subCategory": "Jackets",
+  "condition": "New",
+  "style": "Casual",
+  "price": 120.0,
+  "oldPrice": 155.0,
+  "sizes": ["L", "XL"],
+  "description": "Heavy-duty crimson red parka built for extreme weather. Features windproof layering and multiple utility pockets for outdoor explorers.",
+  "images": ["crimson-storm-expedition.png"],
+  "secretKey": "Qwert01234kkk@"
+}

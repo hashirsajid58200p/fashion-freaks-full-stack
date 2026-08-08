@@ -1,0 +1,55 @@
+<!-- Header Component -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="index.html" class="nav-logo"><img src="../../public/images/logos/logo-purple.png" alt="" class="nav-logo-img"></a>
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-items" id="nav-items">
+        <li class="item"><a class="nav-link active-link" href="index.html">Home</a></li>
+        <li class="item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-btns">
+      <div class="login-toggle" id="login-toggle"><i class="fas fa-user"></i></div>
+      <div class="cart-shop" id="cart-shop" style="position: relative;"><i class="fas fa-shopping-cart"></i><span id="cart-count-badge" style="position: absolute; top: -5px; right: -5px; background: var(--first-color); color: white; font-size: 0.7rem; border-radius: 50%; width: 16px; height: 16px; display: flex; justify-content: center; align-items: center; font-weight: bold; display: none;">0</span></div>
+
+      <div class="nav-toggle" id="nav-toggle"><i id="icon-toggel" class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+</header>
+
+<!-- #################### CART #################### -->
+<div class="cart" id="cart">
+  <i class="fas fa-times cart-close" id="cart-close"></i>
+  <h2 class="cart-title">My Cart</h2>
+  <div class="cart-container">
+
+  </div>
+  <div class="cart-prices">
+    <div class="cart-prices-item">3 Items</div>
+    <span class="cart-prices-total">$41</span>
+  </div>
+  <a href="checkout.html" class="button checkout-btn" style="width: 100%; text-align: center; display: block; padding: 1rem; margin-top: 1rem; border-radius: 0.5rem;">Proceed to Checkout</a>
+
+</div>
+
+<!-- ################# START LOGIN ################ -->
+<div class="login" id="login">
+  <i class="fas fa-times login-close" id="login-close"></i>
+  <h2 class="login-title">LOGIN</h2>
+  <form action="" class="login-form grid">
+    <div class="login-content">
+      <label class="login-label" for="">Email</label>
+      <input type="email" class="login-input" id="e-mail" />
+    </div>
+    <div class="login-content">
+      <label class="login-label" for="">Password</label>
+      <input type="password" class="login-input" id="pass" />
+    </div>
+    <div><a class="login-btn button" href="">Sign In</a></div>
+    <div><p class="signup">Not a member? <a href="regisration.html">SignUp</a></p></div>
+  </form>
+</div>

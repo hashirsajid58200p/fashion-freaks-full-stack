@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add-product | Fashion Freaks</title>
+    <link rel="icon" type="image/png" href="../../public/images/logos/logo-red.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/root.css" />
+    <link rel="stylesheet" href="../styles/pages/add-product.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="container section">
+      <div class="upload-form-container">
+        <h2 class="section-title">Upload New Product</h2>
+
+        <form id="product-upload-form" class="upload-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Product Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="e.g., Adidas Tracksuit"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Main Category</label>
+              <select name="category" required>
+                <option value="Mens">Mens</option>
+                <option value="Women">Women</option>
+                <option value="Kids">Kids</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Sub Category</label>
+              <input
+                type="text"
+                name="subCategory"
+                placeholder="e.g., Jackets, T-shirts"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Condition</label>
+              <select name="condition">
+                <option value="New">New</option>
+                <option value="Sale">Sale</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Style</label>
+              <select name="style" required>
+                <option value="Casual">Casual</option>
+                <option value="Dressy">Dressy</option>
+                <option value="Girly">Girly</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Price ($)</label>
+              <input type="number" name="price" step="0.01" required />
+            </div>
+            <div class="form-group">
+              <label>Old Price ($)</label>
+              <input type="number" name="oldPrice" step="0.01" />
+            </div>
+
+            <div class="form-group full-width">
+              <label>Available Sizes</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="sizes" value="S" /> S</label
+                >
+                <label
+                  ><input type="checkbox" name="sizes" value="M" /> M</label
+                >
+                <label
+                  ><input type="checkbox" name="sizes" value="L" /> L</label
+                >
+                <label
+                  ><input type="checkbox" name="sizes" value="XL" /> XL</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group textarea-group">
+            <label>Description</label>
+            <textarea name="description" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label>Product Images (Select up to 5)</label>
+            <div class="file-drop-zone">
+              <input
+                type="file"
+                id="imageUpload"
+                name="images"
+                accept="image/*"
+                multiple
+                required
+              />
+              <div class="drop-zone-text">
+                <i class="fas fa-images"></i>
+                <p>Click to upload multiple images</p>
+              </div>
+            </div>
+            <div id="imagePreviewContainer" class="image-preview-grid"></div>
+          </div>
+
+          <div class="form-group full-width">
+            <label style="color: var(--first-color)">Admin Secret Key</label>
+            <input
+              type="password"
+              name="secretKey"
+              placeholder="Enter Qwert... password"
+              required
+            />
+          </div>
+
+          <button type="submit" id="submitBtn" class="button submit-btn">
+            Confirm & Publish Product
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../scripts/root.js"></script>
+    <script src="../scripts/pages/add-product.js"></script>
+  </body>
+</html>

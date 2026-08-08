@@ -1,0 +1,98 @@
+    /*************** START BLOG  **************/
+    
+    .blog-container {
+        overflow: hidden;
+    }
+    
+    .blog-img {
+        border-radius: 1.5rem;
+    }
+    
+    .blog-post {
+        background-color: var(--con-color);
+        border-radius: 2rem;
+        padding: 30px 20px;
+        margin: 30px 0;
+        grid-template-columns: 2.6fr 3.4fr;
+        gap: 2rem;
+    }
+    
+    .blog-info {
+        padding: 20px;
+        position: relative;
+    }
+    
+    .blog-info .up-info {
+        font-size: var(--normal-font);
+        line-height: 1.6;
+        color: var(--text-color);
+    }
+    
+    .info-title {
+        margin: 25px 0 15px 0;
+    }
+    
+    .info-discription {
+        font-size: var(--small-font);
+        color: var(--text-color);
+    }
+    
+    .read-more {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--text-color);
+        position: absolute;
+        bottom: 4%;
+        right: 4%;
+        transition: 0.3s;
+    }
+    
+    .read-more:hover {
+        color: var(--first-color);
+    }
+    
+    @media (max-width: 991px) {
+        .blog-post {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .blog-post {
+            margin: 10px;
+            padding: 15px 10px;
+            gap: 1rem;
+        }
+        .read-more {
+            bottom: -4px;
+            right: 2px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .blog-post {
+            grid-template-columns: 1fr;
+            margin: 10px;
+            padding: 15px 10px;
+            gap: 1rem;
+        }
+        .read-more {
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .pagination {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        align-items: center;
+    }
+    
+    @media (max-width: 767px) {
+        .pagination {
+            justify-content: center;
+        }
+    }
+    /*************** END BLOG  ****************/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Fashion Freaks</title>
+    <link rel="icon" type="image/png" href="../../public/images/logos/logo-red.png">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="main">
+        <section class="section container" style="max-width: 600px;">
+            <h2 class="section-title" style="text-align: center;">Payment Details</h2>
+            
+            <div style="background: var(--con-color); padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 20px var(--shadow); margin-top: 2rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+                    <span>Order Total:</span>
+                    <span id="payment-total" style="font-size: 1.5rem; font-weight: bold; color: var(--first-color);">$0.00</span>
+                </div>
+
+                <form id="payment-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Payment Method</label>
+                        <div style="display: flex; gap: 1rem;">
+                            <label style="flex: 1; background: var(--body-color); border: 1px solid var(--first-color); padding: 1rem; border-radius: 0.5rem; text-align: center; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+                                <input type="radio" name="payMethod" value="card" checked style="accent-color: var(--first-color);">
+                                <i class="fas fa-credit-card"></i> Card
+                            </label>
+                            <label style="flex: 1; background: var(--body-color); border: 1px solid var(--first-color); padding: 1rem; border-radius: 0.5rem; text-align: center; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+                                <input type="radio" name="payMethod" value="cod" style="accent-color: var(--first-color);">
+                                <i class="fas fa-truck"></i> COD
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="card-details-section" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Cardholder Name</label>
+                            <input type="text" id="card-name" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color);">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Card Number</label>
+                            <input type="text" id="card-number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color);">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Expiry (MM/YY)</label>
+                                <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color);">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">CVV</label>
+                                <input type="password" id="card-cvv" maxlength="3" placeholder="xxx" style="width: 100%; padding: 0.8rem; border-radius: 0.5rem; background: var(--body-color); color: var(--text-color); border: 1px solid var(--first-color);">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button" style="width: 100%; padding: 1.2rem; border-radius: 0.5rem; font-size: 1.1rem; margin-top: 1rem;">
+                        Place Order <i class="fas fa-check-circle"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../scripts/root.js"></script>
+    <script src="../scripts/pages/payment.js"></script>
+</body>
+</html>

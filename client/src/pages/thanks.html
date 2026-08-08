@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks | Fashion Freaks</title>
+    <link rel="icon" type="image/png" href="../../public/images/logos/logo-red.png">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @media (max-width: 576px) {
+            .section.container {
+                padding: 1.5rem 1rem !important;
+            }
+            .section.container > div {
+                padding: 1rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="main" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 100px; min-height: 80vh;">
+        <section class="section container" style="background: var(--con-color); padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 20px var(--shadow); max-width: 600px; width: 90%; text-align: center;">
+            <i class="fas fa-check-circle" style="font-size: 4rem; color: var(--first-color); margin-bottom: 1.5rem;"></i>
+            <h2 style="color: var(--title-color); margin-bottom: 1rem;">Thank You for Your Purchase!</h2>
+            <p style="color: var(--text-color); margin-bottom: 2rem;">Your order has been successfully processed.</p>
+
+            <!-- Customer Receipt Block -->
+            <div style="text-align: left; background: var(--body-color); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border: 1px solid var(--first-color);">
+                <h3 style="color: var(--first-color); margin-bottom: 1rem; border-bottom: 1px solid var(--con-color); padding-bottom: 0.5rem;">Receipt Details</h3>
+                
+                <div style="margin-bottom: 1rem;">
+                    <p><strong>Name:</strong> <span id="receipt-name"></span></p>
+                    <p><strong>Email:</strong> <span id="receipt-email"></span></p>
+                    <p><strong>Phone:</strong> <span id="receipt-phone"></span></p>
+                    <p><strong>Address:</strong> <span id="receipt-address"></span></p>
+                </div>
+
+                <h4 style="margin-top: 1rem; margin-bottom: 0.5rem; color: var(--title-color);">Items Ordered:</h4>
+                <div id="receipt-items" style="display: flex; flex-direction: column; gap: 0.5rem; max-height: 200px; overflow-y: auto; margin-bottom: 1rem;">
+                    <!-- Loaded via JS -->
+                </div>
+
+                <div style="border-top: 1px solid var(--con-color); padding-top: 0.5rem; font-size: 1.2rem; display: flex; justify-content: space-between; font-weight: bold;">
+                    <span>Total Paid:</span>
+                    <span id="receipt-total" style="color: var(--first-color);">$0.00</span>
+                </div>
+            </div>
+
+            <a href="shop.html" class="button" style="padding: 1rem 2rem; border-radius: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center;">
+                <i class="fas fa-shopping-bag"></i> Continue Shopping
+            </a>
+        </section>
+    </main>
+    <script src="../scripts/pages/thanks.js"></script>
+
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../scripts/root.js"></script>
+</body>
+</html>

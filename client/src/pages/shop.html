@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Fashion Freaks</title>
+    <link rel="icon" type="image/png" href="../../public/images/logos/logo-red.png">
+    <!-- Main Templet CSS File  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../styles/pages/shop.css">
+    <link rel="stylesheet" href="../styles/root.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="main">
+        <section class="shop section container">
+            <h2 class="bearcrumb-title">Shop Page</h2>
+            <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Shop</span> </h3>
+            
+            <div class="shop-container grid">
+                <div class="sidebar">
+                    <h3 class="filter-title">Select Filter</h3>
+                    
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Condition</h3>
+                        <div class="filter"><input type="checkbox" class="filter-condition" value="New"><p>New</p></div>
+                        <div class="filter"><input type="checkbox" class="filter-condition" value="Sale"><p>Sale</p></div>
+                    </div>
+                    
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Size</h3>
+                        <div class="filter"><input type="checkbox" class="filter-size" value="S"><p>S</p></div>
+                        <div class="filter"><input type="checkbox" class="filter-size" value="M"><p>M</p></div>
+                        <div class="filter"><input type="checkbox" class="filter-size" value="L"><p>L</p></div>
+                    </div>
+                    
+                    <div class="filter-content">
+                        <h3 class="filter-subtitle">Categories</h3>
+                        <div class="filter"><input type="checkbox" class="filter-category" value="Mens"><p>Mens</p></div>
+                        <div class="filter"><input type="checkbox" class="filter-category" value="Women"><p>Women</p></div>
+                        <div class="filter"><input type="checkbox" class="filter-category" value="Kids"><p>Kids</p></div>
+                    </div>
+                </div>
+
+                <div class="shop-items grid" id="shop-items-container">
+                    <div class="skeletonAnimation"></div>
+                    <div class="skeletonAnimation"></div>
+                    <div class="skeletonAnimation"></div>
+                    <div class="skeletonAnimation"></div>
+                </div>
+
+            </div>
+
+            <div class="pagination" id="pagination-container" style="display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 2rem; align-items: center;">
+                <!-- Dynamic Pagination buttons -->
+            </div>
+
+        </section>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <a class="scroll-up" id="scroll-up" href="#"><i class="fas fa-arrow-up"></i></a>
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <h4>Theme Colors</h4>
+
+        <div class="themes-colors js-theme-colors">
+            <button type="button" data-js-themes-color="color-1" class="js-theme-color-item themes-button color-1">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-2" class="js-theme-color-item themes-button color-2">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-3" class="js-theme-color-item themes-button color-3">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-4" class="js-theme-color-item themes-button color-4">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-5" class="js-theme-color-item themes-button color-5">
+                <i class="fas fa-check"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/root.js"></script>
+    <script src="../scripts/pages/shop.js"></script>
+</body>
+</html>

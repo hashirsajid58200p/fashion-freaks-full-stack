@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details | Fashion Freaks</title>
+    <link rel="icon" type="image/png" href="../../public/images/logos/logo-red.png">
+    <!-- Main Templet CSS File  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../styles/pages/details.css">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/pages/index.css">
+
+    <!-- Render All Elements Normally  -->
+    
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <!-- #################### CART #################### -->
+    
+
+    <!-- ################# START LOGIN ################ -->
+
+    
+
+
+
+
+    <!-- ################## Start Details ################# -->
+    <div class="main">
+        <section class="details section container">
+            <h2 class="bearcrumb-title">Details</h2>
+            <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Details</span> </h3>
+            <div class="details-container grid" id="details-main-container">
+
+                <div class="details-gallery">
+                    <div class="details-main-img-wrapper" style="position: relative; text-align: center; margin-bottom: 1rem;">
+                        <img src="" id="main-details-img" style="width: 100%; max-height: 350px; object-fit: contain; border-radius: 0.5rem; cursor: pointer;" alt="">
+
+                        
+                        <div class="gallery-nav-btn prev" onclick="window.shiftMainImage(-1)" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10;"><i class="fas fa-chevron-left"></i></div>
+                        <div class="gallery-nav-btn next" onclick="window.shiftMainImage(1)" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10;"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="product-imgs-row" id="details-thumbnails" style="display: flex; gap: 0.5rem; overflow-x: auto; justify-content: center; padding-bottom: 0.5rem;">
+                        <!-- Dynamic Thumbnails -->
+                    </div>
+                </div>
+                <div class="product-imgs grid" style="display: none;">
+
+                    <div class="product-img">
+                        <div class="details-img-tag">New</div>
+                        <img src="../../public/images/urban-navy-zip-main.webp" alt="">
+                    </div>
+                    <div class="product-img">
+                        <img src="../../public/images/urban-navy-zip-pose.webp" alt="">
+                    </div>
+                    <div class="product-img">
+                        <img src="../../public/images/forest-green-zip-main.webp" alt="">
+                    </div>
+                    <div class="product-img">
+                        <img src="../../public/images/heather-gray-mock-zip.webp" alt="">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="details-img-tag" id="primary-tag" style="position: relative; top: auto; left: auto; background: var(--first-color); color: white; padding: 0.2rem 0.6rem; border-radius: 0.2rem; font-size: 0.8rem; display: none; margin-bottom: 0.5rem; width: fit-content;">New</div>
+                    <p class="details-subtitle"></p>
+                    <h3 class="details-title"></h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="reviews-count"></span>
+                    </div>
+                    <div class="details-prices">
+                        <span class="details-price"></span>
+                        <span class="details-discount"></span>
+                        <span class="discount-percentage"></span>
+                    </div>
+                    <div class="details-discription">
+                        <h3 class="discription-title">Product Details</h3>
+                        <div class="discription-details">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart cart-amount-heart"></i>
+                    </div>
+                    <a href="" class="button">Add To Cart</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section related-products">
+            <h2 class="section-title">You May Also Like</h2>
+
+            <div class="new-container container">
+                <div class="swiper new-swiper" style="position: relative;">
+                    <div class="new-swiper-button-prev" style="position: absolute; left: 30px; top: 50%; transform: translateY(-50%); z-index: 9999; cursor: pointer; color: var(--first-color); font-size: 2.2rem;"><i class="fas fa-chevron-left"></i></div>
+                    <div class="new-swiper-button-next" style="position: absolute; right: 30px; top: 50%; transform: translateY(-50%); z-index: 9999; cursor: pointer; color: var(--first-color); font-size: 2.2rem;"><i class="fas fa-chevron-right"></i></div>
+                    <div class="swiper-wrapper" id="real-related-products-container">
+                        <div class="skeletonAnimation" style="height: 250px; width: 100%;"></div>
+                    </div>
+
+                    <div class="swiper-wrapper" id="related-products-container" style="display: none;">
+
+
+                        <!-- NEW CONTENT 1 -->
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img class="new-img" src="../../public/images/vintage-distressed-denim.png" alt="New">
+                            <h3 class="new-title">Windbreker Jacket</h3>
+                            <span class="new-subtitle">Accessory</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">14.99$</span>
+                                <span class="new-discount">29.99$</span>
+                            </div>
+
+                            <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <!-- NEW CONTENT 2 -->
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img class="new-img" src="../../public/images/azure-comfort-shorts.png" alt="New">
+                            <h3 class="new-title">Short Jeans</h3>
+                            <span class="new-subtitle">Clothes</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">10.99$</span>
+                                <span class="new-discount">21.99$</span>
+                            </div>
+
+                            <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <!-- NEW CONTENT 3 -->
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img class="new-img" src="../../public/images/crimson-storm-expedition.png" alt="New">
+                            <h3 class="new-title">Fur Jacket</h3>
+                            <span class="new-subtitle">Accessory</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">4.99$</span>
+                                <span class="new-discount">9.99$</span>
+                            </div>
+
+                            <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <!-- NEW CONTENT 4 -->
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img class="new-img" src="../../public/images/midnight-essential-hoodie.png" alt="New">
+                            <h3 class="new-title">Cardigan Hoodie </h3>
+                            <span class="new-subtitle">Accessory</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">14.99$</span>
+                                <span class="new-discount">29.99$</span>
+                            </div>
+
+                            <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <!-- NEW CONTENT 5 -->
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img class="new-img" src="../../public/images/tactical-olive-parka.png" alt="New">
+                            <h3 class="new-title">Air Jourden Zipper</h3>
+                            <span class="new-subtitle">Clothes</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">11.99$</span>
+                                <span class="new-discount">21.99$</span>
+                            </div>
+
+                            <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <!-- NEW CONTENT 6 -->
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img class="new-img" src="../../public/images/indigo-slim-fit-denim.png" alt="New">
+                            <h3 class="new-title">Jeans</h3>
+                            <span class="new-subtitle">Accessory</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">4.99$</span>
+                                <span class="new-discount">9.99$</span>
+                            </div>
+
+                            <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ################## End details ################# -->
+
+
+
+
+
+    <!-- ################## START FOOTER ############ -->
+    <div id="footer-placeholder"></div>
+    <!-- ################## END FOOTER ############ -->
+
+
+    <!-- ################## START LIGHTBOX ############ -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img class="lightbox-img" src="../../public/images/urban-navy-zip-main.webp" alt="Shirt">
+            <div class="lightbox-caption">
+                <div class="caption-text">Fashion Freaks</div>
+                <div class="caption-counter"></div>
+            </div>
+        </div>
+        <div class="lightbox-control">
+            <div onclick="prevItem()" class="prev-item"><i class="fas fa-arrow-left"></i></div>
+            <div onclick="nextItem()" class="next-item"><i class="fas fa-arrow-right"></i></div>
+        </div>
+    </div>
+    <!-- ################## END LIGHTBOX ############ -->
+
+
+    <!-- ################## SCROLL UP ############ -->
+    <a class="scroll-up" id="scroll-up" href="#"><i class="fas fa-arrow-up"></i></a>
+    <!-- ################## START STYLE SWITCHER  ############ -->
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+
+        </div>
+        <h4>Theme Colors</h4>
+
+        <div class="themes-colors js-theme-colors">
+            <button type="button" data-js-themes-color="color-1" class="js-theme-color-item themes-button color-1">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-2" class="js-theme-color-item themes-button color-2">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-3" class="js-theme-color-item themes-button color-3">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-4" class="js-theme-color-item themes-button color-4">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-5" class="js-theme-color-item themes-button color-5">
+                <i class="fas fa-check"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ################## END STYLE SWITCHER  ############ -->
+    <script>
+        const productItems = document.querySelectorAll(".product-img"),
+            totalProductItems = productItems.length,
+            lightbox = document.querySelector(".lightbox"),
+            lightboxImage = lightbox.querySelector(".lightbox-img"),
+            lightboxClose = lightbox.querySelector(".lightbox-close"),
+            lightboxCounter = lightbox.querySelector(".caption-counter");
+
+        let itemIndex = 0;
+
+        for (let i = 0; i < totalProductItems; i++) {
+            productItems[i].addEventListener("click", function() {
+                itemIndex = i;
+                changeItem();
+                toggleLightbox();
+            })
+        }
+
+        function toggleLightbox() {
+            lightbox.classList.toggle("open")
+        }
+
+        lightbox.addEventListener("click", function() {
+            // lightbox.classList.remove("open")
+            if (event.target === lightboxClose || event.target === lightbox) {
+                toggleLightbox();
+            }
+        })
+
+
+        function nextItem() {
+            if (itemIndex == totalProductItems - 1) {
+                itemIndex = 0;
+            } else {
+                itemIndex++
+            }
+            changeItem()
+        }
+
+        function prevItem() {
+            if (itemIndex == 0) {
+                itemIndex = totalProductItems - 1;
+            } else {
+                itemIndex--
+            }
+            changeItem()
+        }
+
+
+        function changeItem() {
+            imgSrc = productItems[itemIndex].querySelector(".product-img img").getAttribute("src");
+            lightboxImage.src = imgSrc;
+            lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalProductItems;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/root.js"></script>
+    <script src="../scripts/pages/details.js"></script>
+</body>
+
+</html>

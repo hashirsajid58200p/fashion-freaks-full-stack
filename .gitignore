@@ -1,3 +1,11 @@
 # Redundant course/project assets source files
 fashion-freaks_assets.zip
 fashion-freaks_assets/
+
+# Environment variables
+.env
+*.env
+new_accounts.txt
+
+# Dependency directories
+node_modules/
